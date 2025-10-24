@@ -30,7 +30,6 @@ a:hover{
     height: 159px;
     background: #f9faff;
     padding:60px 0;
-
 }
 .header__SimpleFood > .conteiner{
     display: flex;
@@ -128,6 +127,7 @@ a:hover{
 }
 .popular__menu{
     display: flex;
+    flex-wrap: wrap;
     margin-top: 60px;
     justify-content: space-between;
 }
@@ -171,7 +171,7 @@ a:hover{
 }
 .humburger__list{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit,minmax(180px, 2fr));
     gap: 30px;
 }
 .humburger__link{
@@ -302,9 +302,8 @@ a:hover{
     color: #363853;
 }
 .restaurant__menu{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, auto);
+    display: flex;
+    flex-wrap: wrap;
     gap: 30px;
 }
 .restaurant__card{
